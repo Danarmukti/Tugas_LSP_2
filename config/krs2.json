@@ -1,0 +1,42 @@
+[
+    {
+        "npm": "213213123213",
+        "nama": "Danar Mukti",
+        "kelamin": "laki-laki",
+        "jurusan": "Teknik Informatika",
+        "tugas": "80",
+        "uts": "100",
+        "uas": "80",
+        "nilai": "86"
+    },
+    {
+        "npm": "12343356",
+        "nama": "Danar Mukti",
+        "kelamin": "laki-laki",
+        "jurusan": "Teknik Informatika",
+        "tugas": "80",
+        "uts": "100",
+        "uas": "60",
+        "nilai": "76"
+    },
+    {
+        "npm": "16432864",
+        "nama": "Johan",
+        "kelamin": "laki-laki",
+        "jurusan": "Teknik Informatika",
+        "tugas": "80",
+        "uts": "79",
+        "uas": "99",
+        "nilai": "89.2"
+    },
+    {
+        "npm": "12545345345",
+        "nama": "Jihan",
+        "kelamin": "perempuan",
+        "jurusan": "Teknik Informatika",
+        "tugas": "55",
+        "uts": "78",
+        "uas": "77",
+        "nilai": "72.9"
+    }
+]

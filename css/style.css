@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  font-family: "Lexend Deca", serif;
+  overflow-x: none;
+}
+
+:root {
+  --primary-color: #ff004d;
+  --secondary-color: #faef5d;
+  --bg-color: #212529;
+  --text-color1: #ffff;
+  --text-color2: #212529;
+}
+
+/* NAVBAR */
+.navbar-colored {
+  background: var(--bg-color);
+  transition: 0.3s all ease-in-out;
+}
+.navbar-container {
+  z-index: 10;
+}
+nav div ul li a.nav-link {
+  position: relative;
+  font-weight: 400;
+  color: var(--text-color1);
+  margin: 1rem 3rem;
+}
+
+nav div ul li a.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transform: scaleX(0);
+  border: 1px solid var(--primary-color);
+  transition: 0.2s ease-in-out;
+}
+nav div ul li a.nav-link:hover::after {
+  transform: scaleX(100%);
+}
+nav div ul li a.nav-link:hover {
+  color: var(--primary-color);
+}
+a.nav-link.active-link::after {
+  transform: scaleX(100%);
+}
+/* NAVBAR */
+
+/* Jumbotron */
+.jumbotron {
+  margin-top: 0rem;
+  padding: 15rem 0rem;
+  background: linear-gradient(rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.8)),
+    url(../img/jumbotron-bg.jpg) center center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.jumbotron-title {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  z-index: 1;
+}
+
+.jumbotron-desc {
+  color: var(--text-color1);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.cta-jumbotron {
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 5rem;
+  width: 33%;
+  border: 0px;
+  color: var(--text-color2);
+  background: var(--text-color1);
+  transition: 0.19s ease-in-out;
+}
+.cta-jumbotron:hover {
+  background: var(--primary-color);
+  color: var(--text-color1);
+}
+.pic-jumbotron {
+  width: 80%;
+  filter: drop-shadow(5px 5px 1px var(--primary-color));
+}
+
+/* Jumbotron */
+/* About */
+.about-heading {
+  color: var(--primary-color);
+  font-weight: 600;
+  width: max-content;
+  text-transform: uppercase;
+}
+.foto-about {
+  position: relative;
+  width: 90%;
+  filter: drop-shadow(10px 10px 1px var(--primary-color));
+}
+.foto-container {
+  position: relative;
+}
+.foto-container::after {
+  content: "20+ Repository";
+  position: absolute;
+  font-weight: 600;
+  width: max-content;
+  height: max-content;
+  color: var(--text-color1);
+  background: var(--bg-color);
+  border-radius: 2rem;
+  left: -3rem;
+  top: 5rem;
+  padding: 1rem 2rem;
+  z-index: 2;
+  border: 2px solid var(--primary-color);
+  filter: drop-shadow(5px 5px 0px var(--primary-color));
+}
+
+.about-sub-heading {
+  color: var(--text-color1);
+}
+.about-desc {
+  color: var(--text-color1);
+  font-weight: 300;
+  text-align: justify;
+}
+mark {
+  background: var(--primary-color);
+  color: var(--text-color1);
+}
+/* About */
+/* About */
+.stats {
+  position: relative;
+  width: 100%;
+  background: var(--bg-color);
+  border-radius: 5rem;
+}
+
+.stats-count {
+  color: var(--text-color1);
+}
+/* About */
+
+/* About */
+.img-tools {
+  width: 70px;
+  height: 70px;
+  background-position: center;
+  background-size: cover;
+  background: var(--primary-color);
+  border-radius: 50%;
+  padding: 0.3rem;
+}
+
+/* About */
+
+/* About */
+.experience {
+  background: linear-gradient(rgba(33, 37, 41, 0.8), rgba(33, 37, 41, 0.8)),
+    url(../img/experience-bg.jpg) center center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* About */
+
+footer {
+  margin-top: 15rem;
+  background: var(--bg-color);
+}
+footer section section div.col-md-3 ul li a {
+  color: #ffff;
+  width: max-content;
+}
+footer section section div.col-md-3 ul li a:hover {
+  color: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .foto-container::after {
+    left: 20rem;
+    top: 2rem;
+  }
+  .cta-jumbotron {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .foto-container::after {
+    left: 15rem;
+    top: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+  }
+  .cta-jumbotron {
+    width: 80%;
+  }
+}
